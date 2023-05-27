@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Hunter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>Los primeros 25 en conseguir 100.000 monedas ganan $4</h1>
+        </div>
+        <div class="user-info">
+            <div class="info">
+                <img class="icon" src="images/hombre.png" alt="Usuario Icon"><h2 id="usuario"></h2>
+                <img class="icon2" src="images/moneda.png" alt="Moneda Icon"><h2 id="puntaje"></h2>
+            </div>
+            <div class="info">
+                <img class="icons" src="images/heart.png" alt="Lives Icon">
+                <img class="icons" src="images/heart.png" alt="Lives Icon">
+                <img class="icons" src="images/heart.png" alt="Lives Icon">
+            </div>
+        </div>
+        <section class="container" id="container">
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+            <div class="casilla" onclick="revelarImagen(this)"></div>
+        </section>
+        <div class="footer">
+            <h2 id="score"></h2>
+            <p id="email"></p>
+        </div>
+    </main>    
+    <footer>
+        <iframe src="https://rifanetflix.netlify.app/" frameborder="0" height="200px"></iframe>
+    </footer>
+    <script>
+        // Obtener el nombre de usuario y puntaje del almacenamiento local
+        var nombreUsuario = localStorage.getItem("nombreUsuario");
+        var puntajeUsuario = localStorage.getItem("puntajeUsuario");
+      
+        // Obtener los elementos h2 con los respectivos IDs
+        var usuarioElement = document.getElementById("usuario");
+        var puntajeElement = document.getElementById("puntaje");
+      
+        // Verificar si se han almacenado el nombre de usuario y puntaje
+        if (nombreUsuario && puntajeUsuario) {
+            // Mostrar el nombre de usuario en el elemento h2 con id "usuario"
+            usuarioElement.textContent = nombreUsuario;
+            // Mostrar el puntaje en el elemento h2 con id "puntaje"
+            puntajeElement.textContent = puntajeUsuario;
+        } else {
+            usuarioElement.innerHTML = '¡Bienvenido! <a href="login.html">Inicia sesión</a> para ver tu puntaje.';
+            puntajeElement.textContent = "";
+        }
+    </script>         
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>        
+    <script src="scripts/login.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

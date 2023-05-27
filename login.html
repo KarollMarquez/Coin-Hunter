@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Hunter | Login</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="body">
+    <main>
+        <div class="container form2">
+            <section>
+                <h2>Diversión infinita con recompesas</h2>
+                <p>Regístrate para empezar a ganar</p>
+                <p>100.000 monedas = $4</p>
+            </section>
+            <form id="registration-form">
+                <h2>¡Volviste!</h2>            
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario"><br><br>
+            
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="last"><br><br>
+            
+                <a class="button" type="submit" onclick="iniciarSesion()">Inicia sección</a>
+                <p>¿Aun no tienes cuenta?  <a href="signin.html">Registrate</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="scripts/login.js"></script>
+</html>
