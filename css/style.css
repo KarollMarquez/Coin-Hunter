@@ -32,6 +32,9 @@ main{
 }
 #usuario{
     display: flex;
+    flex-direction: column;
+    width: min-content;
+    font-size: 1rem;
 }
 .info{
     display: flex;
@@ -122,7 +125,8 @@ iframe{
     width: 100%;
 }
 footer{
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     text-align: center;
     margin: 0 auto 250px;
 }
