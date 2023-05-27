@@ -73,7 +73,7 @@ main{
     background-position: center;
     font-size: 0;
     cursor: pointer;
-    background-image: url('C:/Users/Lenovo/Desktop/KAROLL/Coin Hunter/images/fondo.png');
+    background-image: url('images/fondo.png');
 }
 .revelada{
     background-image: none;
