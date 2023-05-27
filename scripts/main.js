@@ -34,7 +34,7 @@ function perderVida() {
     }      
     else{
         swal({
-            title: "Game Over"},"Este puntaje no se guardará");
+            title: "Game Over", text: "Este puntaje no se guardará"});
     }
     restaurarJuego();
     mostrarPuntaje();
@@ -87,7 +87,7 @@ function perderVida() {
   }      
   else{
       swal({
-          title: "Game Over"},"Este puntaje no se guardará");
+          title: "Game Over",  text: "Este puntaje no se guardará"});
   }
   restaurarJuego();
   mostrarPuntaje();
