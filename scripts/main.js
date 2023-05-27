@@ -64,6 +64,31 @@ function obtenerImagenAleatoria() {
 }
 
 var vidas = 3;
+
+function revelarImagen(casilla) {
+  // Verifica si la casilla ya fue revelada
+  if (!casilla.classList.contains("revelada")) {
+    var imagen = obtenerImagenAleatoria();
+
+    // Agrega la clase "revelada" para evitar que se revele nuevamente
+    casilla.classList.add("revelada");
+
+    // Actualiza el contenido de la casilla con la imagen revelada
+    casilla.style.backgroundImage = `url('${imagen}')`;
+
+    // Actualiza el puntaje y las vidas en función de la imagen revelada
+    if (imagen === "images/oro.png") {
+      puntaje += 15;
+    } else if (imagen === "images/ladron.png") {
+      puntaje -= 10;
+      perderVida();
+    }
+
+    // Actualiza el puntaje en el elemento HTML correspondiente
+    document.getElementById("puntaje").textContent = puntaje;
+  }
+}
+
 function perderVida() {
   // Reduce una vida
   vidas--;
@@ -92,31 +117,6 @@ function perderVida() {
     if (i >= vidas) {
       vidasElementos[i].classList.add("lost-life");
     }
-  }
-}
-
-
-function revelarImagen(casilla) {
-  // Verifica si la casilla ya fue revelada
-  if (!casilla.classList.contains("revelada")) {
-    var imagen = obtenerImagenAleatoria();
-
-    // Agrega la clase "revelada" para evitar que se revele nuevamente
-    casilla.classList.add("revelada");
-
-    // Actualiza el contenido de la casilla con la imagen revelada
-    casilla.style.backgroundImage = `url('${imagen}')`;
-
-    // Actualiza el puntaje y las vidas en función de la imagen revelada
-    if (imagen === "images/oro.png") {
-      puntaje += 15;
-    } else if (imagen === "images/ladron.png") {
-      puntaje -= 10;
-      perderVida();
-    }
-
-    // Actualiza el puntaje en el elemento HTML correspondiente
-    document.getElementById("puntaje").textContent = puntaje;
   }
 }
 
