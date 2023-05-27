@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=League+Spartan&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+h1{
+    font-family: 'Alegreya', serif;
+    color: #F8EAD6;
+    font-size: 4em;
+}
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3em;
+}
+p{
+    font-size: 15px;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+header{
+    background-color: #343333;
+}
+.body{
+    background-color: #cdcfc0;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    background-color: #cdcfc0;
+    color: black;
+}
+.text{
+    text-align: center;
+}
+.text>*{
+    padding: 10px 0;
+}
+.parrafo{
+    padding-top: 30px;
+}
+.image{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+section{
+    width: 30%;
+}
+section>*{
+    padding-top: 20px;
+}
+.form{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.form2{
+    padding: 100px 0;
+}
+form{
+    background-color: #f1ebe5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+form>h2{
+    text-align: center;
+    margin: 20px 0;
+}
+input, .button{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 0;
+}
+.button{
+    padding: 10px 0;
+    background-color: #343333;
+    color: white;
+    margin: 10px 0 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}

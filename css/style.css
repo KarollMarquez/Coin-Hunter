@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=League+Spartan&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 90%;
+    max-width: 600px;
+    background-color:antiquewhite;
+    margin: 300px auto 60px;
+    border-radius: 10px;
+}
+.title{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title h1{
+    padding: 20px 0;
+    font-size: 1em;
+}
+.user-info{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#usuario{
+    display: flex;
+}
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.info:first-of-type{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.info:last-of-type{
+    margin-left: 10px;
+}
+.icons{
+    width: 25px;
+}
+.icon{
+    width: 25px;
+}
+.icon2{
+    width: 20px;
+}
+.container{
+    display: grid;
+    padding: 25px;
+    width: 100%;
+    grid-template: repeat(5,1fr)/repeat(5,1fr);
+    gap: 10px;
+}
+.casilla{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    cursor: pointer;
+    background-image: url('C:/Users/Lenovo/Desktop/KAROLL/Coin Hunter/images/fondo.png');
+}
+.revelada{
+    background-image: none;
+}
+.lost-life {
+    opacity: 0.5; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blueviolet;
+}
+#score{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+}
+.footer{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 120px;
+}
+#email{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color:firebrick;
+    font-weight: bold;
+}
+#email a{
+    color: white;
+}
+#email a:hover{
+    color: white;
+}
+iframe{
+    margin: 0 auto;
+    width: 100%;
+}
+footer{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto 250px;
+}
+@media (min-width: 768px) {
+    .title h1{
+        font-size: 1.5em;
+    }
+    #score{
+        font-size: 1.5em;
+    }
+    .casilla{
+        background-size: 80px;
+    }
+    .icon{
+        width: 50px;
+    }
+    .icons{
+        width: 50px;
+    }
+    .icon2{
+        width: 30px;
+    }
+    footer{
+        width: 800px;
+    }
+}
