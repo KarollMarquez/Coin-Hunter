@@ -22,7 +22,7 @@ function perderVida() {
   vidas--;
 
   // Obtén la lista de elementos de vida
-  var vidasElementos = document.getElementsByClassName("icons");
+  var vidasElementos = document.querySelector(".info").getElementsByClassName("icons");
 
   // Verifica si se agotaron las vidas
   if (vidas === 0) {
@@ -33,7 +33,7 @@ function perderVida() {
         guardarPuntaje();
     }      
     else{
-        swalt({
+        swal({
             title: "Game Over"},"Este puntaje no se guardará");
     }
     restaurarJuego();
