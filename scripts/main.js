@@ -22,7 +22,7 @@ function perderVida() {
   vidas--;
 
   // Obtén la lista de elementos de vida
-  var vidasElementos = document.querySelector(".info").getElementsByClassName("icons");
+  var vidasElementos = document.getElementsByClassName("icons");
 
   // Verifica si se agotaron las vidas
   if (vidas === 0) {
@@ -64,6 +64,37 @@ function obtenerImagenAleatoria() {
 }
 
 var vidas = 3;
+function perderVida() {
+  // Reduce una vida
+  vidas--;
+
+  // Obtén la lista de elementos de vida
+  var vidasElementos = document.getElementsByClassName("icons");
+
+  // Verifica si se agotaron las vidas
+  if (vidas === 0) {
+    // Muestra un mensaje de Game Over
+    if (nombreUsuario && puntajeUsuario) {
+      swal({title: "Game Over"});
+      
+      guardarPuntaje();
+  }      
+  else{
+      swal({
+          title: "Game Over"},"Este puntaje no se guardará");
+  }
+  restaurarJuego();
+  mostrarPuntaje();
+  }
+
+  // Actualiza la opacidad de los elementos de vida
+  for (var i = 0; i < vidasElementos.length; i++) {
+    if (i >= vidas) {
+      vidasElementos[i].classList.add("lost-life");
+    }
+  }
+}
+
 
 function revelarImagen(casilla) {
   // Verifica si la casilla ya fue revelada
