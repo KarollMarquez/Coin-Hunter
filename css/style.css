@@ -6,8 +6,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.ads{
-    margin: 20px auto;
+iframe{
+    margin: 0 auto;
 }    
 main{
     width: 90%;
