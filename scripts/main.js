@@ -44,25 +44,6 @@ function perderVida() {
   vidasElementos[vidasElementos.length - vidas - 1].classList.add("lost-life");
 }
 
-
-function obtenerImagenAleatoria() {
-    var totalMonedas = 25 - 10; // Total de casillas menos el número de ladrones
-    var imagenes = [];
-  
-    // Agrega las imágenes de monedas al arreglo
-    for (var i = 0; i < totalMonedas; i++) {
-      imagenes.push("images/oro.png");
-    }
-  
-    // Agrega las imágenes de ladrones al arreglo
-    for (var i = 0; i < 10; i++) {
-      imagenes.push("images/ladron.png");
-    }
-  
-    var indiceAleatorio = Math.floor(Math.random() * imagenes.length);
-    return imagenes.splice(indiceAleatorio, 1)[0];
-}
-
 var vidas = 3;
 
 function revelarImagen(casilla) {
@@ -118,6 +99,24 @@ function perderVida() {
       vidasElementos[i].classList.add("lost-life");
     }
   }
+}
+
+function obtenerImagenAleatoria() {
+    var totalMonedas = 25 - 10; // Total de casillas menos el número de ladrones
+    var imagenes = [];
+  
+    // Agrega las imágenes de monedas al arreglo
+    for (var i = 0; i < totalMonedas; i++) {
+      imagenes.push("images/oro.png");
+    }
+  
+    // Agrega las imágenes de ladrones al arreglo
+    for (var i = 0; i < 10; i++) {
+      imagenes.push("images/ladron.png");
+    }
+  
+    var indiceAleatorio = Math.floor(Math.random() * imagenes.length);
+    return imagenes.splice(indiceAleatorio, 1)[0];
 }
 
 function restaurarJuego() {
