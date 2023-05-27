@@ -6,11 +6,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.ads{
+    margin: 20px auto;
+}    
 main{
     width: 90%;
     max-width: 600px;
     background-color:antiquewhite;
-    margin: 300px auto 60px;
+    margin: 80px auto 60px;
     border-radius: 10px;
 }
 .title{
