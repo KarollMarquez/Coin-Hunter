@@ -151,8 +151,12 @@ footer iframe{
     align-items: center;
     margin-top: 50px;
     gap: 10px;
+    flex-direction: column;
 }
 @media (min-width: 768px) {
+    .ads{
+        flex-direction: row;   
+    }
     .title h1{
         font-size: 1.5em;
     }
