@@ -78,6 +78,7 @@ section>*{
 }
 .form2{
     padding: 100px 0;
+    gap: 20px;
 }
 form{
     background-color: #f1ebe5;
@@ -129,5 +130,8 @@ a{
     }
     .form{
         padding-top: 50px;
+        gap: 0;
+    }
+    .form2{
         gap: 0;
     }
