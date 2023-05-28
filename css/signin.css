@@ -63,13 +63,18 @@ img{
 }
 section{
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto 0;
+
+}
+section h2{
+    text-align: center;
 }
 section>*{
     padding-top: 0;
 }
 .form{
     padding-bottom: 100px;
+    gap: 20px;
 }
 .form2{
     padding: 100px 0;
@@ -111,6 +116,10 @@ a{
     }
     section{
         width: 30%;
+        margin: 0 auto;
+    }
+    section h2{
+        text-align: left;
     }
     section>*{
         padding-top: 40px;
@@ -120,4 +129,5 @@ a{
     }
     .form{
         padding-top: 50px;
+        gap: 0;
     }
