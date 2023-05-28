@@ -27,6 +27,7 @@ p{
     align-items: center;
     justify-content: space-between;
     flex: 1;
+    flex-direction: column;
 }
 header{
     background-color: #343333;
@@ -102,4 +103,8 @@ a{
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
+}
+
+@media (min-width: 768px){
+    flex-direction: row;
 }
