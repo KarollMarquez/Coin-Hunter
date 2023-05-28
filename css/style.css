@@ -133,6 +133,12 @@ footer{
     text-align: center;
     margin: 0 auto 250px;
 }
+.ads{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
 @media (min-width: 768px) {
     .title h1{
         font-size: 1.5em;
