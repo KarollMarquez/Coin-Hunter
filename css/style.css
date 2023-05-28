@@ -135,11 +135,13 @@ footer{
 }
 footer a{
     background-color: #F45050;
-    padding: 20px 10px;
+    padding: 15px 25px;
     color: white;
     border-radius: 5px;
-    margin: 30px auto;
     text-decoration: none;
+}
+footer iframe{
+    margin-bottom: 35px; 
 }
 .ads{
     display: flex;
