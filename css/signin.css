@@ -114,6 +114,7 @@ a{
 @media (min-width: 768px){
     .container{
         flex-direction: row;
+        justify-content: space-evenly;
     }
     section{
         width: 45%;
