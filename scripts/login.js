@@ -47,7 +47,7 @@ function iniciarSesion() {
   
     db.collection("registro")
       .where("usuario", "==", usuario)
-      .where("password", "==", contraseña)
+      .where("Password", "==", contraseña)
       .get()
       .then((querySnapshot) => {
         if (querySnapshot.empty) {
